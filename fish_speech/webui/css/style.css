@@ -1,0 +1,153 @@
+:root {
+  --my-200: #4ade80;
+  --my-50: #1a1a1a;
+  --water-width: 300px;
+  --water-heigh: 300px;
+  --link-color: #4ade80;
+  --bg-dark: #1a1a1a;
+  --text-dark: #e0e0e0;
+  --primary-color: #4ade80;
+  --secondary-color: #22c55e;
+  --accent-color: #86efac;
+}
+
+/* general styled components */
+.tools {
+  align-items: center;
+  justify-content: center;
+}
+
+.gradio-button {
+  max-width: 2.2em;
+  min-width: 2.2em !important;
+  height: 2.4em;
+  align-self: end;
+  line-height: 1em;
+  border-radius: 0.5em;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)) !important;
+  color: white !important;
+  border: none !important;
+  transition: all 0.3s ease;
+}
+
+.gradio-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(74, 222, 128, 0.2);
+}
+
+/* 主要容器背景 */
+.gradio-container {
+  background-color: var(--bg-dark) !important;
+  color: var(--text-dark) !important;
+}
+
+/* 所有组件的基础样式 */
+.gradio-box, 
+.gradio-dropdown,
+.input-container,
+.output-container,
+.gradio-dropdown > select,
+.gradio-textbox,
+.gradio-checkbox,
+.gradio-radio,
+.gradio-slider,
+.gradio-markdown {
+  background-color: #1e1e1e !important;
+  color: var(--text-dark) !important;
+}
+
+/* 输入框和选择框 */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  background-color: #2d2d2d !important;
+  color: var(--text-dark) !important;
+}
+
+/* 标题和文本 */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color) !important;
+}
+
+/* 标签和说明文本 */
+label, .description {
+  color: var(--text-dark) !important;
+}
+
+/* 滑块样式 */
+.gradio-slider {
+  background-color: #2d2d2d !important;
+}
+
+.gradio-slider .slider-track {
+  background: var(--primary-color) !important;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+
+/* 确保文本可见性 */
+* {
+  color: var(--text-dark);
+}
+
+/* 链接样式 */
+a {
+  color: var(--link-color) !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--secondary-color) !important;
+  text-decoration: underline;
+}
+
+/* 页脚样式 */
+footer {
+  display: none !important;
+}
+
+#footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+#footer div {
+  display: inline-block;
+}
+
+#footer .versions {
+  font-size: 85%;
+  opacity: 0.85;
+}
+
+/* 版本信息链接样式 */
+.version-links {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.version-links a,
+.version-links span {
+  margin: 0 5px;
+  display: inline-block;
+}
