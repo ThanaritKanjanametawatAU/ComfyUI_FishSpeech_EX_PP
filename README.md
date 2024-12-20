@@ -1,6 +1,6 @@
 [English](README.md) | [简体中文](README_zh_CN.md)
 
-# ComfyUI_Hunyuan3D_EX
+# ComfyUI_FishSpeech_EX
 
 This plugin is optimized for Fish-Speech-1.5 version and is only applicable to version 1.5:
 1. The plugin references the ComfyUI-fish-speech plugin for optimization, and modifies the overall configuration address and installation method.
