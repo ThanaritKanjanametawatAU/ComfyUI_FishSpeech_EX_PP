@@ -69,7 +69,7 @@ class LoadVQGAN:
 
     def load_vqgan(self, config, model, device):
         config = config.rsplit(".", 1)[0]
-        model = str(CKPTS_FOLDER + "\\" + model)
+        model = os.path.join(CKPTS_FOLDER, model)
         if self.vqgan is None:
             self.vqgan = load_vqgan_model(config, model, device=device)
         return (self.vqgan,)
